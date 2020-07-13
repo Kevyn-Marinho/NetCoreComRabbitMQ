@@ -28,7 +28,7 @@ namespace Receiver
                     var body = ea.Body;
                     var message = Encoding.UTF8.GetString(body);
                     
-                    Console.WriteLine(" mensagem {0}", message);
+                    Console.WriteLine("Valor recebido: {0}", message);
                 };
                 channel.BasicConsume(queue: QueueName,
                                      autoAck: true,

@@ -26,7 +26,7 @@ namespace Sender
                 var j = 0;
                 while(j < 4){
 
-                    var message = $"Mensagem {j}!";
+                    var message = $"Esta é a mensagem {j}!";
                     var body = Encoding.UTF8.GetBytes(message);
                     
                     channel.BasicPublish(exchange: "",
